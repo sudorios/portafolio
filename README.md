@@ -1,13 +1,54 @@
-# React + Vite
+# Portafolio de Daniel Rios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a mi portafolio personal! 🚀
 
-Currently, two official plugins are available:
+Este proyecto está construido con **React** + **Vite**, usando **pnpm 9** para la gestión de paquetes y **Tailwind CSS 3** para los estilos. Aquí muestro mis proyectos, experiencia y habilidades de una forma moderna y profesional.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Instalación y uso
 
-## Expanding the ESLint configuration
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/tuusuario/tu-portafolio.git
+   cd tu-portafolio
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# portafolio
+2. **Instala las dependencias (usa pnpm 9):**
+   ```bash
+   pnpm install
+   ```
+
+3. **Inicia el servidor de desarrollo:**
+   ```bash
+   pnpm dev
+   ```
+   El proyecto estará disponible en [http://localhost:5173](http://localhost:5173)
+
+4. **Compila para producción:**
+   ```bash
+   pnpm build
+   ```
+
+## 🛠️ Tecnologías principales
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS 3](https://tailwindcss.com/)
+- [pnpm 9](https://pnpm.io/)
+
+## 📦 Scripts útiles
+- `pnpm dev` — Inicia el servidor de desarrollo
+- `pnpm build` — Compila la app para producción
+- `pnpm preview` — Previsualiza la build de producción
+- `pnpm lint` — Ejecuta el linter
+
+## ✨ Características
+- Diseño responsive y moderno
+- Animaciones suaves con Tailwind
+- Código organizado y fácil de mantener
+- Listo para desplegar en Vercel, Netlify, etc.
+
+## 📄 Licencia
+Este proyecto es de código abierto. ¡Siéntete libre de usarlo y adaptarlo!
+
+---
+
+> Hecho con 💻 por Daniel Rios
