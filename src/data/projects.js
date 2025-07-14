@@ -1,4 +1,5 @@
 import owensDocImg from '../assets/images/owens-doc.webp';
+import freeImg from '../assets/images/free.webp';
 
 const projects = [
   {
@@ -15,19 +16,14 @@ const projects = [
     ],
   },
   {
-    title: "Clon de Klar",
-    description:
-      "Este proyecto simula el funcionamiento de la aplicación bancaria original (sin la posibilidad de realizar ningún movimiento bancario real). Mi objetivo con este proyecto fue mejorar mis habilidades Fullstack en React Native con Expo y Firebase.",
-    image:
-      "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
-    bg: "from-[#43cea2] to-[#185a9d]",
-    codeUrl: "#",
+    title: "FreeStyle Shop",
+    description: "Freestyle Shop es una plataforma web de e-commerce desarrollada en PHP y PostgreSQL, orientada a la gestión y venta de productos de moda. Incluye un panel administrativo robusto y una experiencia de compra moderna para el cliente final",
+    image: freeImg,
     techs: [
-      { name: "Expo", color: "bg-[#1e293b] text-white" },
-      { name: "React Native", color: "bg-[#1e293b] text-blue-400" },
-      { name: "TypeScript", color: "bg-[#1e293b] text-blue-300" },
-      { name: "CSS", color: "bg-[#1e293b] text-cyan-300" },
-      { name: "Firebase", color: "bg-orange-500 text-white" },
+      { name: "PHP", color: "bg-[#1e293b] text-purple-400" },
+      { name: "PostgreSQL", color: "bg-[#1e293b] text-blue-300" },
+      { name: "Tailwind", color: "bg-[#1e293b] text-cyan-300" },
+      { name: "Cloudinary", color: "bg-[#1e293b] text-yellow-300" },
     ],
   },
 ];
