@@ -4,7 +4,8 @@ import projects from "../data/projects";
 function Projects() {
   return (
     <section className="w-full py-20 bg-gradient-to-b from-primary to-[#0d1117]">
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+        {" "}
         {projects.map((project) => (
           <div
             key={project.title}
@@ -13,7 +14,7 @@ function Projects() {
               backgroundImage: `linear-gradient(135deg, var(--tw-gradient-stops))`,
             }}
           >
-            <div className={`rounded-2xl bg-[#18181b] overflow-hidden`}>
+            <div className={`rounded-2xl bg-[#18181b] min-h-[340px] flex flex-col h-full`}>
               <div
                 className={`h-80 w-full bg-gradient-to-br ${project.bg}`}
                 style={{ minHeight: "320px" }}
@@ -25,12 +26,17 @@ function Projects() {
                   style={{ objectFit: "cover" }}
                 />
                 {project.title === "Owens-Bot" ? (
-                  <a href="/owens-bot" className="absolute cursor-pointer top-0 left-0 w-full h-80 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-2xl text-white text-xl font-bold">
+                  <a
+                    href="/owens-bot"
+                    className="absolute cursor-pointer top-0 left-0 w-full h-80 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-2xl text-white text-xl font-bold"
+                  >
                     Leer más
                   </a>
                 ) : (
                   <div className="absolute cursor-pointer top-0 left-0 w-full h-80 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-2xl">
-                    <span className="text-white text-xl font-bold">Leer más</span>
+                    <span className="text-white text-xl font-bold">
+                      Leer más
+                    </span>
                   </div>
                 )}
               </div>
