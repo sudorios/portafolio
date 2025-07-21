@@ -32,6 +32,13 @@ function Projects() {
                   >
                     Leer más
                   </a>
+                ) : project.title === "FreeStyle Shop" ? (
+                  <a
+                    href="/freestyle-shop"
+                    className="absolute cursor-pointer top-0 left-0 w-full h-80 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-2xl text-white text-xl font-bold"
+                  >
+                    Leer más
+                  </a>
                 ) : (
                   <div className="absolute cursor-pointer top-0 left-0 w-full h-80 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-2xl">
                     <span className="text-white text-xl font-bold">

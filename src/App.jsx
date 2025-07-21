@@ -5,6 +5,8 @@ import Hero from './components/Hero'
 import Timeline from './components/Timeline'
 import Projects from './components/Projects'
 import OwensBotPage from './components/OwensBotPage'
+import EcommercePage from './components/EcommercePage'
+import Footer from './components/footer'
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
             </>
           } />
           <Route path="/owens-bot" element={<OwensBotPage />} />
+          <Route path="/freestyle-shop" element={<EcommercePage />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   )
