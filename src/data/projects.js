@@ -1,5 +1,5 @@
 import owensDocImg from '../assets/images/owens-doc.webp';
-import freeImg from '../assets/images/free.webp';
+import freeImg from '../assets/images/freestyle-shop/free.webp';
 
 const projects = [
   {
