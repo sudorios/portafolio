@@ -14,46 +14,46 @@ function Carousel({ slides, title, backgroundClass = "bg-gradient-to-br from-[#1
   }, [slides.length]);
 
   return (
-    <section className={`relative w-full min-h-[32rem] flex flex-col justify-center items-center py-10 px-2 overflow-visible ${backgroundClass}`}>
-      <div className="max-w-5xl w-full mx-auto flex flex-col items-center text-center px-2 md:px-0">
-        <h2 className="text-2xl md:text-3xl font-bold text-white mb-1">{title}</h2>
-        <p className="text-base md:text-lg text-white min-h-[2.5rem] transition-all duration-300">
+    <section className={`relative w-full min-h-[20rem] sm:min-h-[32rem] flex flex-col justify-center items-center py-6 sm:py-10 px-1 sm:px-2 overflow-visible ${backgroundClass}`}>
+      <div className="max-w-5xl w-full mx-auto flex flex-col items-center text-center px-1 sm:px-2 md:px-0">
+        <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-white mb-1">{title}</h2>
+        <p className="text-xs sm:text-base md:text-lg text-white min-h-[2rem] sm:min-h-[2.5rem] transition-all duration-300">
           {slides[current].desc}
         </p>
       </div>
       <div className="w-full flex flex-col items-center justify-center mt-2 mb-2">
         <div className="max-w-5xl w-full flex flex-col items-center justify-center">
-          <div className="flex gap-2">
+          <div className="flex gap-1 sm:gap-2">
             <button
               onClick={prevSlide}
-              className="bg-white/80 hover:bg-gray-100 text-gray-700 rounded-full p-1.5 shadow-lg border border-gray-200 transition-colors"
+              className="bg-white/80 hover:bg-gray-100 text-gray-700 rounded-full p-1 sm:p-1.5 shadow-lg border border-gray-200 transition-colors"
               aria-label="Anterior"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 sm:w-5 sm:h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button
               onClick={nextSlide}
-              className="bg-white/80 hover:bg-gray-100 text-gray-700 rounded-full p-1.5 shadow-lg border border-gray-200 transition-colors"
+              className="bg-white/80 hover:bg-gray-100 text-gray-700 rounded-full p-1 sm:p-1.5 shadow-lg border border-gray-200 transition-colors"
               aria-label="Siguiente"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 sm:w-5 sm:h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
           </div>
-          <div className="relative w-[95vw] max-w-5xl h-[28rem] md:h-[36rem] flex items-center justify-center -mx-4 mt-8 md:-mx-0">
+          <div className="relative w-[95vw] max-w-5xl h-[12rem] sm:h-[28rem] md:h-[36rem] flex items-center justify-center -mx-2 sm:-mx-4 mt-4 sm:mt-8 md:-mx-0">
             <img
               src={slides[current].img}
               alt={slides[current].alt}
               className="rounded-2xl w-full h-full object-cover scale-105"
             />
-            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            <div className="absolute bottom-2 sm:bottom-3 left-1/2 -translate-x-1/2 flex gap-1 sm:gap-2 z-10">
               {slides.map((_, idx) => (
                 <span
                   key={idx}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${idx === current ? "bg-gray-700" : "bg-gray-300"}`}
+                  className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-200 ${idx === current ? "bg-gray-700" : "bg-gray-300"}`}
                 />
               ))}
             </div>

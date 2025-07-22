@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <header className="text-white fixed top-0 z-20 flex items-center justify-center w-full mx-auto mt-4">
-      <nav className="flex gap-8 px-6 text-base font-medium rounded-full bg-primary/80 backdrop-blur-md shadow-lg py-3 border border-cyan-500">
+      <nav className="flex gap-4 sm:gap-6 md:gap-8 px-2 sm:px-4 md:px-6 text-sm sm:text-base font-medium rounded-full bg-primary/80 backdrop-blur-md shadow-lg py-2 sm:py-3 border border-cyan-500">
         <a
           className={`cursor-pointer ${isHome && (hash === '#hero' || !hash) ? 'text-secondary font-bold' : ''}`}
           onClick={() => {
