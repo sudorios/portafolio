@@ -10,8 +10,8 @@ module.exports = {
         sans: ['Inter', 'sans-serif'],
       },
       colors: {
-        primary: '#131213', 
-        secondary: '#f5a425', 
+        primary: '#1E1E2F', 
+        secondary: '#6CA9F8', 
         accent: '#fde047',
         card: '#27272a', 
         text: '#f4f4f5', 

@@ -74,7 +74,6 @@ function EcommercePage() {
         ]}
         title="Solución e-commerce para potenciar tu negocio"
       />
-
       <section
         className="w-full min-h-[60vh] flex flex-col items-center justify-center pt-16 pb-16"
         style={{ backgroundSize: "40px 40px" }}
@@ -165,24 +164,7 @@ function EcommercePage() {
         ]}
         title="Gestiona tu panel de control de manera profesional"
       />
-      <section className="w-full max-w-5xl mx-auto rounded-2xl shadow-lg px-6 py-12 mt-16 mb-16 flex flex-col md:flex-row gap-8 items-center bg-gradient-to-br from-[#18181b] to-[#23263a]">
-        <div className="flex-1 flex flex-col justify-center items-start">
-          <div className="flex items-center mb-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Transforma tu visión en éxito.
-            </h2>
-          </div>
-          <p className="text-lg text-cyan-300 font-semibold mb-2">
-            ¡Tu proyecto merece crecer!
-          </p>
-          <p className="text-gray-300 mb-6">
-            Solo necesitas dar el primer paso. Completa el formulario, y estaré
-            en contacto contigo para discutir cómo puedo ayudarte a llevar tu
-            idea al siguiente nivel. ¡Vamos a hacerlo realidad juntos!
-          </p>
-        </div>
         <ContactForm />
-      </section>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Carousel({ slides, title, backgroundClass = "bg-gradient-to-b from-primary to-[#0d1117]" }) {
+function Carousel({ slides, title, backgroundClass = "bg-gradient-to-br from-[#18181b] to-[#23263a]" }) {
   const [current, setCurrent] = React.useState(0);
 
   const prevSlide = () => setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
